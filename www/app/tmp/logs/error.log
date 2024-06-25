@@ -1,0 +1,111 @@
+2024-06-25 12:38:37 Error: [MissingActionException] Action UsersController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+)
+Request URL: /
+Stack Trace:
+#0 /opt/sites/auth-form/www/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /opt/sites/auth-form/www/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /opt/sites/auth-form/www/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2024-06-25 12:39:13 Error: [MissingDatasourceConfigException] The datasource configuration "default" was not found in database.php
+Exception Attributes: array (
+  'config' => 'default',
+)
+Request URL: /
+Stack Trace:
+#0 /opt/sites/auth-form/www/lib/Cake/Model/ConnectionManager.php(91): ConnectionManager::_getConnectionObject('default')
+#1 /opt/sites/auth-form/www/lib/Cake/Model/Model.php(3659): ConnectionManager::getDataSource('default')
+#2 /opt/sites/auth-form/www/lib/Cake/Model/Model.php(1162): Model->setDataSource('default')
+#3 /opt/sites/auth-form/www/lib/Cake/Model/Model.php(3686): Model->setSource('users')
+#4 /opt/sites/auth-form/www/lib/Cake/Model/Model.php(1394): Model->getDataSource()
+#5 /opt/sites/auth-form/www/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#6 /opt/sites/auth-form/www/lib/Cake/View/Helper/FormHelper.php(480): FormHelper->_introspectModel('User', 'fields')
+#7 /opt/sites/auth-form/www/app/View/Users/add.ctp(2): FormHelper->create('User', Array)
+#8 /opt/sites/auth-form/www/lib/Cake/View/View.php(971): include('/opt/sites/auth...')
+#9 /opt/sites/auth-form/www/lib/Cake/View/View.php(933): View->_evaluate('/opt/sites/auth...', Array)
+#10 /opt/sites/auth-form/www/lib/Cake/View/View.php(473): View->_render('/opt/sites/auth...')
+#11 /opt/sites/auth-form/www/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#12 /opt/sites/auth-form/www/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#13 /opt/sites/auth-form/www/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#14 /opt/sites/auth-form/www/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2024-06-25 12:54:12 Error: [MissingControllerException] Controller class AuthController could not be found.
+Exception Attributes: array (
+  'class' => 'AuthController',
+  'plugin' => NULL,
+)
+Request URL: /auth/login
+Stack Trace:
+#0 /opt/sites/auth-form/www/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2024-06-25 12:54:37 Error: [MissingControllerException] Controller class AuthController could not be found.
+Exception Attributes: array (
+  'class' => 'AuthController',
+  'plugin' => NULL,
+)
+Request URL: /auth/users/login
+Stack Trace:
+#0 /opt/sites/auth-form/www/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2024-06-25 12:54:56 Error: [MissingControllerException] Controller class AuthController could not be found.
+Exception Attributes: array (
+  'class' => 'AuthController',
+  'plugin' => NULL,
+)
+Request URL: /auth/users/login
+Stack Trace:
+#0 /opt/sites/auth-form/www/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2024-06-25 12:54:58 Error: [MissingControllerException] Controller class AuthController could not be found.
+Exception Attributes: array (
+  'class' => 'AuthController',
+  'plugin' => NULL,
+)
+Request URL: /auth/users/login
+Stack Trace:
+#0 /opt/sites/auth-form/www/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2024-06-25 12:55:18 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /opt/sites/auth-form/www/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /opt/sites/auth-form/www/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /opt/sites/auth-form/www/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2024-06-25 12:55:38 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /opt/sites/auth-form/www/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /opt/sites/auth-form/www/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /opt/sites/auth-form/www/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2024-06-25 12:55:53 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /
+Stack Trace:
+#0 /opt/sites/auth-form/www/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /opt/sites/auth-form/www/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /opt/sites/auth-form/www/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2024-06-25 12:57:32 Error: [MissingControllerException] Controller class AddController could not be found.
+Exception Attributes: array (
+  'class' => 'AddController',
+  'plugin' => NULL,
+)
+Request URL: /add
+Stack Trace:
+#0 /opt/sites/auth-form/www/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
